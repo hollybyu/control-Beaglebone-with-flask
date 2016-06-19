@@ -1,6 +1,3 @@
-var logo = document.getElementById("logo");
-logo.setAttribute("align", "left");
-
 function sendData(data) {
     var XHR = new XMLHttpRequest();
     var FD  = new FormData();
@@ -27,13 +24,12 @@ function sendData(data) {
     XHR.send(FD);
 }
 
-var onButton = document.getElementById("onButton");
-var offButton = document.getElementById("offButton");
+var toggleBtn = document.getElementById("toggleLED");
 
-onButton.onmousedown = function() {
+toggleBtn.onmousedown = function() {
 	sendData({state:"on"});
 };
 
-onButton.onmouseup = function() {
+toggleBtn.onmouseup = function() {
 	sendData({state:"off"});
 };

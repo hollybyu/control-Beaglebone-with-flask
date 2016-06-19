@@ -1,10 +1,8 @@
 <html>
 	<body>
-		<img title="BYU_Medallion_Logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/BYU_Medallion_Logo.svg" alt="Photo of Byron Bay in Australia" width="150" height="150">
+		<img id="logo" title="BYU_Medallion_Logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/BYU_Medallion_Logo.svg" alt="BYU_logo" width="150" height="150">
 		<h1>LED</h1>
-		<form method="post">
-			<input type="submit" name="state" value="on" />
-			<input type="submit" name="state" value="off" />
-		</form>
+		<button type="button" id="toggleLED">Toggle LED</button>
+		<script src="{{ url_for('static', filename='script.js') }}"></script>
 	</body>
 </html>

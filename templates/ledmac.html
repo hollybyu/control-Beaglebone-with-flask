@@ -1,9 +1,8 @@
 <html>
 	<body>
-		<img id="logo" title="BYU_Medallion_Logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/BYU_Medallion_Logo.svg" alt="BYU_logo" width="150" height="150">
+		<img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/BYU_Medallion_Logo.svg" alt="BYU_logo" width="150" height="150" align="right">
 		<h1>LED</h1>
-		<button type="button" id="onButton">On</button>
-		<button type="button" id="offButton">Off</button>
+		<button type="button" id="toggleLED" style="font-size : 20px; width: 100px; height: 50px;">Toggle LED</button><br/>
 		<iframe width="480" height="270" src="https://www.youtube.com/embed/Vr4frdyEgJw?autoplay=0">
 	    </iframe>
 		<script src="{{ url_for('static', filename='script.js') }}"></script>
